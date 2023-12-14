@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Billing site</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font-links -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Playfair+Display+SC:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,700;1,800&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Seven</h1>
+        <p>the retro rush</p>
+      </div>
+      <div class="logo-content">
+        <ol class= "nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#billing">Billing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </div>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <!-- hero-section -->
+    <section id="home">
+    <div class="hero">
+      <h1>Seven</h1>
+      <p>Celebrate your taste buds</p>
+      <button class="btn"><a href="#">Book Now</a></button>
+    </div>
+  </section>
+
+    <!-- menu-section -->
+<section id="menu">
+    <div class="menu">
+      <div class="menu-heading">
+        <h2>Menu</h2>
+      </div>
+      <div class="menu-cards">
+        <div class="Starters">
+          <img src="starters.jpg" alt="" />
+          <hr />
+          <p>starters</p>
+        </div>
+        <div class="Main">
+          <img src="main course.jpg" alt="" />
+          <hr />
+          <p>Main Course</p>
+        </div>
+        <div class="Beverages">
+          <img src="drinks.avif" alt="" />
+          <hr />
+          <p>Beverages</p>
+        </div>
+        <div class="Veg-course">
+          <img src="corn.jpg" alt="" />
+          <hr />
+          <p>Veg course</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Billing section -->
+    
+<section id="billing">
+    <div class="billing">
+      <div class="billing-heading">
+        <h2>Billing</h2>
+      </div>
+
+      <div class="billing-content">
+        <div class="customer-contact">
+          <h4 class="heading">Enter Customer details</h4>
+          <div class="customer-form">
+            <div>
+              <p>Name</p>
+            <!-- <input type="text" id="name1" /> -->
+            <input type="text" name="name" id="name1">
+            </div>
+            <div>
+              <p>Phn Number</p>
+             <input type="tel"  id="phn"/>
+            </div>
+          </div>
+        </div>
+        <div class="form">
+          <h4>Enter Items Cost</h4>
+          <div>
+            <p>Crispy corn</p>
+            <input type="number" onkeyup ="sample(event,'corn')" id="corn" />
+            
+            
+          </div>
+          <div>
+            <p>chilli chicken</p>
+            <input type="number" onkeyup ="sample(event,'chilli')" id="chilli"/>
+          </div>
+          <div>
+            <p>loose prawns</p>
+            <input type="number"  onkeyup ="sample(event,'prawns')" id="prawns"/>
+          </div>
+          <div>
+            <p>Chepala pulusu</p>
+            <input type="number" onkeyup ="sample(event,'fish')" id="fish"/>
+          </div>
+          <div>
+            <p>Dum Biryani</p>
+            <input type="number" onkeyup ="sample(event,'Cb')" id="Cb"/>
+          </div>
+          <div>
+            <p>Mutton Biryani</p>
+           
+            <input type="number" onkeyup ="sample(event,'mb')" id="mb"/>
+            
+          </div>
+          <div>
+            <p>Panner Biryani</p>
+           <input type="number"  onkeyup ="sample(event,'pb')" id="pb" />
+          </div>
+          <div>
+            <p>Italian mocktail</p>
+           <input type="number" onkeyup ="sample(event,'mt')" id="mt"/>
+          </div>
+          <div>
+            <p>Elspanzo mint cooler</p>
+           
+            <input type="number" onkeyup ="sample(event,'mc')" id="mc"/>
+          </div>
+          <div>
+            <p>Custard apple ice cream</p>
+            <input type="number" onkeyup ="sample(event,'ice')" id="ice"/>
+          </div>
+          <div>
+            <p>GST%</p></form>
+            <input type="number" onkeyup ="sample(event,'gst')" id="gst"/>
+          </div>
+          <div>
+            <p>With tip </p>
+           <input type="number" onkeyup ="sample(event,'tip')" id="tip"/>
+          </div> 
+        </div>
+      </div>
+      <div class="payment">
+       
+          <div class="name">
+           <p>Name </p>
+           <!-- <input type="text" id="name2"/> -->
+           <input type="text" name="name" id="name2">
+        </div>
+          <div class="number">
+           <p>Phn Number </p>
+           <input type="tel" id="phn2"/>
+          </div>
+          <div class="total">
+          <p>Total Bill </p>
+         <input type="text" id="total"/>
+        </div>
+         
+      <button id="btn">Print Bill</button>
+   
+      </div>
+    </div>
+    </section>
+
+    <!-- contact-section -->
+<section id="contact">
+    <footer class="footer">
+      <div><h5>Seven</h5>
+        <p>the retro rush</p></div>
+
+              <div><h3>Contact Us</h3>
+            <p>700 Terry Street</p>
+      <p>United states of Banjara Hills</p>
+      <p>9550973572</p></div>
+      
+    </footer>
+  </section>
+
+  <script src="app.js"></script>
+  </body>
+</html>
